@@ -1,0 +1,37 @@
+# Maven / Java build output
+target/
+*.class
+hs_err_pid*
+replay_pid*
+
+# Spring Initializr generated help
+HELP.md
+
+# Logs
+*.log
+logs/
+
+# Environment files (keep the template)
+.env
+.env.*
+!.env.example
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Docker local files
+docker-compose.override.yml
+pgdata/
+
+# Claude Code personal settings
+.claude/settings.local.json
