@@ -4,7 +4,7 @@ A lightweight, unified production-management tool for small and mid-size fashion
 
 ## Status
 
-<!-- TODO: fill in current status -->
+Phase 1, slice 0 done: Spring Boot 4.1 skeleton with PostgreSQL 18, Flyway migrations, a health check, and Testcontainers tests. Next: the core module (styles, milestones, delay risk).
 
 ## Tech stack
 
@@ -28,13 +28,13 @@ TODO
 
 ## Run with Docker
 
-> The application, Dockerfile, and `docker-compose.yml` are not in the repo yet, so these commands will not work until they are added.
-
 Create your local environment file and set your own values:
 
 ```
 cp .env.example .env
 ```
+
+If another Postgres already listens on port 5432 (for example a Homebrew install), set `DB_PORT=5433` in `.env`. Both Docker Compose and `./mvnw spring-boot:run` read it.
 
 Run the full stack:
 
@@ -48,6 +48,11 @@ To develop locally, start only Postgres and run the app against it:
 docker compose up -d db
 ./mvnw spring-boot:run
 ```
+
+Once running:
+
+- Health check: http://localhost:8080/actuator/health
+- API docs (Swagger UI): http://localhost:8080/swagger-ui.html
 
 ## Run tests
 

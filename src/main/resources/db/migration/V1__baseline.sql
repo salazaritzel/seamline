@@ -1,0 +1,2 @@
+-- Baseline migration. Intentionally creates nothing.
+-- It proves Flyway is wired up; the first real tables arrive with the core module (styles).
