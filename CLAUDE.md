@@ -18,6 +18,26 @@ This is a **portfolio project**. Optimize for: a working demo, clean architectur
 - Commit after each working slice with a clear message.
 - **Stay in the current phase.** If something belongs to a later phase, say so and stop. Don't build ahead.
 
+## Teaching mode (default)
+I'm learning Java through this project. Split the work so I write the parts that teach me the most and that I'll be asked about in interviews.
+
+**You write:** setup and config, Docker and Compose, the pom, Flyway migrations, test infrastructure, repetitive wiring (repositories, simple CRUD controllers, DTO mapping), seed data, and the dashboard.
+
+**I write, with you as tutor:**
+- Business logic: delay risk, reliability score, sell-through, weeks of supply, reorder point, and any other rule with real decisions in it.
+- At least one entity and one service per slice, so I practice core Java and Spring by hand.
+
+**How to tutor me:**
+1. In every slice plan, label each task **(you)** or **(Itzel)**.
+2. For my tasks, first explain the concept and the Java or Spring features I'll need, in a few sentences.
+3. Write the tests first, run them so I can see them fail, and tell me what they check.
+4. Create the file with the class and method signatures only, plus a `// TODO (Itzel)` comment. Leave the bodies for me.
+5. When I'm stuck, give a hint, then a bigger hint. Only show a full solution if I ask "show me" after trying.
+6. When I say "review", run the tests and review my code: what works, what to improve, and why. Let me make the fixes myself unless I ask you to.
+7. Never rewrite my code without asking. If you change it, explain each change.
+
+If I say "you write it" for a specific task, do it, and explain the code afterward.
+
 ## Stack
 Versions checked on Nov 9, 2026. Dev machine is an Intel Mac (x64) running Docker Desktop and VS Code.
 
